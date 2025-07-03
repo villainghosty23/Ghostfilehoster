@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostFileHoster | Upload, Share & Host Files</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FileShare</h1>
+            <p>Upload your files and share them with anyone</p>
+        </header>
+        
+        <div class="upload-container">
+            <div class="drop-area" id="dropArea">
+                <h3>Drag & Drop Files Here</h3>
+                <p>or</p>
+                <input type="file" id="file-input">
+                <button class="btn" id="browse-btn">Browse Files</button>
+            </div>
+            
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div style="text-align: center;">
+                <button class="btn" id="upload-btn" disabled>Upload File</button>
+                <button class="btn btn-secondary" id="clear-btn">Clear</button>
+            </div>
+        </div>
+        
+        <div class="result-container" id="resultContainer">
+            <h2>Your file is ready to share!</h2>
+            <p>Share this link with anyone:</p>
+            <div class="url-display" id="urlDisplay"></div>
+            <button class="btn" id="copy-btn">Copy Link</button>
+            <button class="btn btn-secondary" id="new-upload-btn">Upload Another File</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>FileShare &copy; 2023 | Secure File Hosting Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
